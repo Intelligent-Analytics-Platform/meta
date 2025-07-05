@@ -14,4 +14,4 @@ RUN uv sync --frozen --no-cache
 EXPOSE 8001
 
 # 启动命令
-CMD ["uv", "run", "uvicorn", "apps.meta.main:app", "--host", "0.0.0.0", "--port", "8001"]
+CMD ["uv", "run", "uvicorn", "main:api", "--host", "0.0.0.0", "--port", "8001"]
